@@ -27,7 +27,8 @@
           font: font.call(this, d, i),
           rotate: rotate.call(this, d, i),
           size: ~~fontSize.call(this, d, i),
-          padding: cloudPadding.call(this, d, i)
+          padding: cloudPadding.call(this, d, i),
+          city: d.city
         };
       }).sort(function(a, b) { return b.size - a.size; });
 
